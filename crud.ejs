@@ -8,20 +8,65 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+<style>
+#gif{
+    text-align: right;
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+.container{
+    padding-top: 30px;
+}
+#registro{
+    background-color: #ff3333;
+    width: 300px;
+    height: 600px; 
+}
+#user{
+    width: 120px;
+    height:120px;
+}
+#corpo{
+    background-image: url("http://1.bp.blogspot.com/-hPTt-K4vL1s/VhswvXNtugI/AAAAAAAAAXo/TluQCvDJyjA/s1600/tumblr_static_background.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+</style>
 <body>
+    <div id="corpo"> 
+    <img src="https://i2.wp.com/animasso.com.br/wp-content/uploads/2018/08/ultra-instinct.gif?fit=712%2C400&ssl=1" alt="gif" id="gif">
+    <div style="text-align:center ">
     <div class="container"> 
     <form action="/show" method="POST">
-    <div class="navbar navbar-dark bg-primary">
-    <h4>Registro</h4>
-
+    <div id="registro" >
+    <img id = "user"src="http://3.bp.blogspot.com/-9xy8lO8uqc8/VN_LdHA03ZI/AAAAAAAABZM/utxy8OgcS1c/s1600/usuario.png" alt="usuario">
+    <h1 id="Registro">Registro</h1>
+    <h6>Nome:</h6>
     <input type="text" placeholder="Nome" name="nome">
+    <h6>Sobrenome</h6>
     <input type="text" placeholder="Sobrenome" name="surname">
-    <button>ENVIAR</button>
-    </div>
+    <h6>Endereço</h6>
+    <input type="text" placeholder="Rua xxxxxxx" name="Endereço">
+    <h6>Bairro</h6>
+    <input type="text" placeholder="Bairro" name="Bairro">
+    <h6>Idade</h6>
+    <input type="number" placeholder="99" name="idade">
+    <p></p>
+    <button >Enviar</button>
     </form>
     </div>
+</div>
+</div>
+</div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
 </body>
 </html>
+
